@@ -2,6 +2,36 @@
 
 This project contains an implementation of a multi-step forecasting model using Recurrent Neural Networks (RNN).
 
+## Running the project locally
+
+1. Install required libraries/modules
+   - pandas
+   - numpy
+   - tensorflow
+   - sklearn
+   - keras
+   - random
+   - matplotlib
+
+
+1. Download or clone the repository 
+2. Open MLProject.ipynb in your IDE
+3. Run the following cell: 
+   ```python
+   import pandas as pd
+   # loading the dataset locally (do not run this cell if using colab)
+   day_ds = pd.read_csv('data/day.csv')
+   hour_ds = pd.read_csv('data/hour.csv')
+   ```
+4. Skip the following cell:
+   ```python
+   from google.colab import drive
+   drive.mount('/content/gdrive')
+   day_ds = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/day.csv')
+   hour_ds = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/hour.csv')
+   ```
+
+
 ## Setting up the Project in Google Colab
 
 To set up this project in Google Colab, follow these steps:
@@ -33,5 +63,4 @@ To set up this project in Google Colab, follow these steps:
     ```
 
     Replace `username:token` with your GitHub username and a personal access token. The token is necessary for authentication if you're cloning a private repository or if your GitHub account has two-factor authentication enabled.
-
 
